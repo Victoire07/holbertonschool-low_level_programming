@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Print the alph less two ltrs
+ * main - Prints alpha less two lettrs
  *
  * Return: 0
  */
@@ -9,11 +9,10 @@ int main(void)
 	char sns;
 
 	for (sns = 'a'; sns <= 'z'; sns++)
-	if (sns != 'e' && sns != 'q')
+	if (sns != 'q' && sns != 'e')
 	{
 		putchar(sns);
-	
 	}
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 }
