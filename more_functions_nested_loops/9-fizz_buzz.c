@@ -3,10 +3,10 @@
  * main - Write a program
  *
  * Description: Write a program that prints the numbers from 1 to 100
- * - Multiples of three : print Fizz instead of the number 
- * - Multiples of five : print Buzz instead of the number
- * - Multiples of both three and five print FizzBuzz
- * - Each number or word should be separated by a space
+ * Multiples of three : print Fizz instead of the number
+ * Multiples of five : print Buzz instead of the number
+ * Multiples of both three and five print FizzBuzz
+ * Each number or word should be separated by a space
  *
  * Return: 0
  */
@@ -23,11 +23,11 @@ int main(void)
 	else if (num % 5 == 0)
 		printf("Buzz");
 	else
-            printf("%d", num);
+		printf("%d", num);
 	if (num != 100)
 		printf(" ");
 	}
 	printf("\n");
-	return 0;
+	return (0);
 }
 
