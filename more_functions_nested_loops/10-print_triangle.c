@@ -15,14 +15,16 @@ void print_triangle(int size)
 		_putchar('\n');
 		return;
 	}
-
 	for (l = 0; l < size; l++)
 	{
-		for (c = 0; c < size; c++)
-		{
-			_putchar('#');
-			_putchar(' ');
-		}
-		_putchar('\n');
+	for (c = 0; c < size - l - 1; c++)
+	{
+	_putchar(' ');
+	}
+	for (c = 0; c <= l; c++)
+	{
+	_putchar('#');
+	}
+	_putchar('\n');
 	}
 }
