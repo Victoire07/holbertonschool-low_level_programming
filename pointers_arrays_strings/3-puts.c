@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * _puts - Affiche une chai®ne de carate¨res suivie d'un saut de lig
  * @str: pointeur vers une chai®ne de cartere
