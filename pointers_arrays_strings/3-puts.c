@@ -8,13 +8,11 @@
  */
 void _puts(char *str)
 {
-	int car = 0;
+	int car;
 
-	while (str[car] != '\0') /* Tant que la fin dla chaine est pas atteinte */
+	for (car = 0; str[car] != '\0'; car++)
 	{
-		putchar(str[car]); /* Putchar donc affiche le carctere courant */
-		car++;
+		_putchar(str[car]);
 	}
-
-	putchar('\n');
+	_putchar('\n');
 }
