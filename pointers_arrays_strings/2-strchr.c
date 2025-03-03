@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stddef.h>
 /**
  * _strchr - Trouve la premiere occurrence d1 cara dans une chaine
  * @s: La chaine de caracteres a parcourir
