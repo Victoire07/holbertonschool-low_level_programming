@@ -2,10 +2,11 @@
 #include <stdio.h>
 /**
  * _strstr - Recherche une sous chaine
- * @s: La chaine dans laquelle rechercher
- * @accept: La sous chaine | localiser
+ * @haystack: La string a chercher
+ * @aneedle: La sous chaine a trouver
  *
- * Return: Pointeur vers le debut de la ss chaine trouvee, ou NULL si nn trouve
+ * Return: Un pointeur sur la 1ere occurrence de laiguille dans la botte 2 foin
+ *		NULL si l'aiguille n'est pas trouvee
  */
 
 char *_strstr(char *haystack, char *needle)
