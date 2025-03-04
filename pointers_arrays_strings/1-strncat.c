@@ -1,10 +1,18 @@
 #include "main.h"
 
 /**
- * _strncat - Concatene 2 chaine de caras
- * @dest: La chaine de cara |  laquelle `src` sera ajouee.
- * @src: La chaine de cars© |  ajouter |  `de
- * @n: Le nbre maximal de caras de src a conctaner
+ * _strncat - Concatene deux chaines de caracteres jusqu'a un maximum de n caracteres
+ * @dest: La chaine de destination a laquelle `src` sera ajoutee
+ * @src: La chaine source qui sera ajoutee a `dest`
+ * @n: Le nombre maximal de caracteres de `src` a concatener
+ *
+ * Description: Cette fonction ajoute au maximum `n` caracteres de `src` a `dest`,
+ * en s'assurant que `dest` reste termine par un caractere nul (`\0`).
+ * Si `src` contient moins de `n` caracteres, seuls les caracteres disponibles
+ * seront ajoutes. La fonction suppose que `dest` dispose d'assez d'espace pour
+ * contenir le resultat de la concatenation.
+ *
+ * Return: Un pointeur vers la chaine `dest` apres concatenation
  */
 
 char *_strncat(char *dest, char *src, int n)
