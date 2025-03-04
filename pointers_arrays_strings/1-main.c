@@ -19,13 +19,7 @@ int main(void)
 #include "main.h"
 #include <stdio.h>
 
-/**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
- *
- * Return: Nothing.
- */
+/*
 void simple_print_buffer(char *buffer, unsigned int size)
 {
     unsigned int i;
@@ -47,11 +41,6 @@ void simple_print_buffer(char *buffer, unsigned int size)
     printf("\n");
 }
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
 int main(void)
 {
     char buffer[98] = {0};
@@ -61,5 +50,33 @@ int main(void)
     _memcpy(buffer + 50, buffer2, 10);
     printf("-------------------------------------------------\n");
     simple_print_buffer(buffer, 98);    
+    return (0);
+}
+*/
+
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    char s1[98] = "Hello ";
+    char s2[] = "World!\n";
+    char *ptr;
+
+    printf("%s\n", s1);
+    printf("%s", s2);
+    ptr = _strncat(s1, s2, 1);
+    printf("%s\n", s1);
+    printf("%s", s2);
+    printf("%s\n", ptr);
+    ptr = _strncat(s1, s2, 1024);
+    printf("%s", s1);
+    printf("%s", s2);
+    printf("%s", ptr);
     return (0);
 }
