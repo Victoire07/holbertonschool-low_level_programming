@@ -11,21 +11,23 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int count = 0;
-	while (*s)
-	{
-		int j;
-		for (j = 0; accept[j] != '\0'; j++)
+	unsigned int count = 0; /* Ajout du point-virgule */
+
+		while (*s)
 		{
-			if (*s == accept[j])
-            {
-		    count++;
-		    break;
-	    }
+			int j;
+
+			for (j = 0; accept[j] != '\0'; j++)
+			{
+				if (*s == accept[j])
+				{
+					count++;
+					break;
+				}
+			}
+			if (accept[j] == '\0')
+				return (count);
+			s++;
 		}
-		if (accept[j] == '\0')
-			return count;
-		s++;
-	}
-	return count;
+		return (count);
 }
