@@ -5,8 +5,7 @@
  * @haystack: La string a chercher
  * @aneedle: La sous chaine a trouver
  *
- * Return: Un pointeur sur la 1ere occurrence de laiguille dans la botte 2 foin
- *		NULL si l'aiguille n'est pas trouvee
+ * Return: 1ptr sur1ere occrrencedelaiguilledansbotte2foin&NULLsi aig pastrouve
  */
 
 char *_strstr(char *haystack, char *needle)
