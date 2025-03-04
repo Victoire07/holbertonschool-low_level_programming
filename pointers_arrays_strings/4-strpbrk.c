@@ -1,18 +1,20 @@
 #include "main.h"
-#include <???>
-
-/* 
- * Faire mon comm Betty
+#include <stddef.h>
+/**
+ * _strpbrk - Recherche le premier caractère de s qui appartient à accept
+ * @s: La chaîne principale à analyser
+ * @accept: La chaîne contenant les caractères recherchés
  *
-*/ 
+ * Return: Pointeur vers le premier caractère trouvé dans s
+ */
 
 char *_strpbrk(char *s, char *accept)
 {
-	char *ptr = s;
-	
 	while (*s)
 	{
-		for (int j = 0; accept[j] != '\0'; j++)
+		int j;
+
+		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (*s == accept[j])
 			{
