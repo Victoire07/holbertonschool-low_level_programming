@@ -19,5 +19,7 @@ char *_strchr(char *s, char c);
 int _atoi(char *s);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
+char *_strstr(char *haystack, char *needle);
+char *_strcat(char *dest, char *src);
 
 #endif
