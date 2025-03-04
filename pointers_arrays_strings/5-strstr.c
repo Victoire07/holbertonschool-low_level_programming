@@ -3,7 +3,7 @@
 /**
  * _strstr - Recherche une sous chaine
  * @haystack: La string a chercher
- * @aneedle: La sous chaine a trouver
+ * @needle: La sous chaine a trouver
  *
  * Return: 1ptr sur1ere occrrencedelaiguilledansbotte2foin&NULLsi aig pastrouve
  */
