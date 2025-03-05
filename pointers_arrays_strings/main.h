@@ -27,5 +27,6 @@ char *_strncat(char *dest, char *src, int n);
 char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 char *_strncpy(char *dest, char *src, int n);
+int _strcmp(char *s1, char *s2);
 
 #endif
