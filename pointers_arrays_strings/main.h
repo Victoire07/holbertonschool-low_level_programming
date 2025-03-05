@@ -1,5 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <stdio.h>
+#include <stdlib.h>
 
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
@@ -23,5 +25,6 @@ char *_strstr(char *haystack, char *needle);
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
 char *_strstr(char *haystack, char *needle);
+void print_chessboard(char (*a)[8]);
 
 #endif
