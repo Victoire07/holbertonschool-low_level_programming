@@ -1,7 +1,7 @@
 #include "dog.h"
 
 /**
- * print_dog- fonction qui imprime une structure dog
+ * print_dog - fonction qui imprime une structure dog
  * @d: Pointeur vers la structure `dog` a afficher
  */
 
