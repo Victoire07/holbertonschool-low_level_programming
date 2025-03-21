@@ -3,7 +3,7 @@
  * op_add - Addition de 2 nombres
  * @a: nombre 1
  * @b: nombre 2
- * Return: Resultat de l'opération
+ * Return: Resultat de l'operation
  */
 int op_add(int a, int b)
 {
@@ -14,7 +14,7 @@ int op_add(int a, int b)
  * op_sub - Soustraction de 2 nombres
  * @a: nombre 1
  * @b: nombre 2
- * Return: Resultat de l'opération
+ * Return: Resultat de l'operation
  */
 int op_sub(int a, int b)
 {
@@ -25,7 +25,7 @@ int op_sub(int a, int b)
  * op_mul - Multiplication de 2 nombres
  * @a: nombre 1
  * @b: nombre 2
- * Return: Resultat de l'opération
+ * Return: Resultat de l'operation
  */
 int op_mul(int a, int b)
 {
@@ -36,7 +36,7 @@ int op_mul(int a, int b)
  * op_div - Division de 2 nombres
  * @a: nombre 1
  * @b: nombre 2
- * Return: Resultat de l'opération
+ * Return: Resultat de l'operation
  */
 int op_div(int a, int b)
 {
@@ -47,7 +47,7 @@ int op_div(int a, int b)
  * op_mod - Modulo de 2 nombres
  * @a: nombre 1
  * @b: nombre 2
- * Return: Resultat de l'opération
+ * Return: Resultat de l'operation
  */
 int op_mod(int a, int b)
 {

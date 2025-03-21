@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
         printf("Error\n");
         return (100);
     }
-
+    
     op_func = get_op_func(argv[2]);
     printf("%d\n", op_func(a, b));
 
