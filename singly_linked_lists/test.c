@@ -485,3 +485,84 @@ int main(void)
     afficher_tableau();
     return (0);
 }
+
+#include <stdio.h>
+void afficher_prenom(void)
+{
+    char prenom[] = "Victoire";
+    int i = 0;
+
+    while (prenom[i] != '\0')
+    {
+        printf("%c\n", prenom[i]);
+        i++;
+    }
+}
+
+int main(void)
+{
+    afficher_prenom();
+    return(0);
+}
+
+#include <stdio.h>
+
+void compter_lettres(void)
+{
+    char mot[] = "Victoire";
+    int i = 0;
+    int compteur = 0;
+
+    while (mot[i] != '\0')
+    {
+        compteur++;
+        i++;
+    }
+
+    printf("Le nombre de lettres est : %d\n", compteur);
+}
+
+int main(void)
+{
+    compter_lettres();
+    return (0);
+}
+
+#include <stdio.h>
+void afficher_lettres(void)
+{
+    char nom[] = "Luminou";
+    int i = 0;
+
+    while (nom[i] != '\0')
+    printf("%c\n", nom[i]);
+}
+
+int main(void)
+{
+    afficher_lettres();
+    return(0);
+}
+
+#include <stdio.h>
+void compter_lettres(void)
+{
+    char nom[] = "Luminou";
+    int i = 0;
+    int compteur = 0;
+
+    while (nom[i] != '\0')
+    {
+        compteur++;
+        i++;
+    }
+
+    printf("Le mot contient %d lettres.\n", compteur);
+}
+
+int main(void)
+{
+    compter_lettres();
+    return (0);
+}
+
