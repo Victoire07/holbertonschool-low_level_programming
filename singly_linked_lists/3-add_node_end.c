@@ -18,14 +18,14 @@ int _strlen(const char *s)
 }
 
 /**
- * add_node_end - fonction qui ajoute un nouveau noeud a la fin d'une liste list_t
+ * add_node_end - fonction qui ajte un nveau noeud a la fin d'une liste list_t
  * @head: Pointeur vers la tête de la liste
  * @str: Chaine à dupliquer et stocker dans le nouveau noeud
  * Return: l'adresse du nouvel élément, ou NULL en cas d'échec
  */
 
- list_t *add_node_end(list_t **head, const char *str)
- {
+list_t *add_node_end(list_t **head, const char *str)
+{
 	list_t *new_node;
 	list_t *last;
 
@@ -58,4 +58,4 @@ int _strlen(const char *s)
 	}
 	return (new_node);
 
- }
+}
