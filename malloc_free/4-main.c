@@ -8,6 +8,7 @@
  * @width: width of the grid
  * @height: height of the grid
  *
+ * Return: Nothing.
  */
 void print_grid(int **grid, int width, int height)
 {

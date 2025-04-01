@@ -54,8 +54,28 @@ void print_all(const char * const format, ...)
 	
 		i++;
 	}
-	printf("\n");
+
 	va_end(args);
 
 
 }
+
+typedef struct type_printer 
+ {
+	char type;
+	void (*print_func)(va_list args);
+} type_printer;
+
+void print_char(va_list args)
+void print_int(va_list args)
+void print_float(va_list args)
+void print_string(va_list args)
+type_printer printers[] = 
+{
+      {'c', print_char},
+      {'i', print_int},
+      {'f', print_float},
+      {'s', print_string},
+
+  };
+
