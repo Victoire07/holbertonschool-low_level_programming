@@ -469,3 +469,19 @@ int main(void)
     return 0;
 }
 
+#include <stdio.h>
+
+void afficher_tableau(void)
+{
+    int i;
+    int nombres[5] = {3, 6, 9, 12, 15};
+
+    for(i = 0; i <5; i++)
+    printf("%d\n", nombres[i]);
+}
+
+int main(void)
+{
+    afficher_tableau();
+    return (0);
+}
