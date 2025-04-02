@@ -5,8 +5,8 @@
  * @head: liste
  */
 
- void free_list(list_t *head)
- {
+void free_list(list_t *head)
+{
 	list_t *temporaire;
 
 	while (head != NULL)
@@ -16,5 +16,5 @@
 		free(head);
 		head = temporaire;
 	}
-	
- }
+
+}
