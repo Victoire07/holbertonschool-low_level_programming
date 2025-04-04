@@ -566,3 +566,81 @@ int main(void)
     return (0);
 }
 
+#include <stdio.h>
+
+void compter_voyelles(void)
+{
+    char mot[] = "Papillon";
+    int i = 0;
+    int count = 0;
+
+    while (mot[i] != '\0')
+    {
+        if (mot[i] == 'a' || mot[i] == 'e' || mot[i] == 'i' || mot[i] == 'o' || mot[i] == 'u')
+        {
+            count++;
+        }
+        i++;
+    }
+
+    printf("Il y a %d voyelles dans le mot.\n", count);
+}
+
+int main(void)
+{
+    compter_voyelles();
+    return (0);
+}
+
+#include <stdio.h>
+
+void remplacer_voyelles(void)
+{
+    char mot[] = "Papillon";
+    int i = 0;
+
+    while (mot [i] != '\0')
+
+    if (mot[i] == 'a' ||  mot[i] == 'e' || mot[i] == 'i' || mot[i] == 'o' || mot[i] == 'u' || mot[i] == 'y')
+    {
+        mot[i] = '*';
+    }
+    i++;
+    
+    printf("Mot modifié : %s\n", mot);
+}
+
+int main(void)
+
+{
+    remplacer_voyelles();
+    return (0);
+}
+
+#include <stdio.h>
+void compter_majuscules_minuscules(void)
+{
+    char mot[] = "PaPiLLoN";
+    int i = 0;
+    int count_maj = 0;
+    int count_min = 0;
+
+    while (mot[i] != '\0')
+    if (mot[i] >= 'A' && mot[i] <= 'Z')
+    {
+        count_maj ++;
+    }
+    else
+    {
+        count_min ++;
+    }
+    i++;
+
+    printf("Il y'a %d majuscules et %d minuscules dans ce mot\n", count_maj, count_min);
+}
+
+int main(void)
+{
+    compter_majuscules_minuscules();
+    return (0);
+}
