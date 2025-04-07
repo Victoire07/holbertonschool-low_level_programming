@@ -23,15 +23,15 @@ int main(int argc, char *argv[])
 	for (i= 1; i < argc; i++)
 	{
 		is_valid = 1;
-	}
-	for (j = 0; argv[i][j] != '\0'; j++)
-	{
-		if (argv[i][j] < '0' || argv[i][j] > '9')
+
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			is_valid = 0;
-			break;
-		}
-    }
+			if (argv[i][j] < '0' || argv[i][j] > '9')
+			{
+				is_valid = 0;
+				break;
+			}
+   		}
 		if (is_valid) 
 		{
 			somme += atoi(argv[i])
@@ -45,8 +45,6 @@ int main(int argc, char *argv[])
 		return 0;
 	
 }
-
-
 
 
         
