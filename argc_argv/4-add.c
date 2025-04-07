@@ -10,7 +10,8 @@
 int main(int argc, char *argv[])
 {
 	int somme = 0;
-	int i, j;
+	int i,
+	int j;
 	int is_valid;
 
 	if (argc == 1)
@@ -46,7 +47,3 @@ int main(int argc, char *argv[])
 	printf("%d\n", somme);
 	return (0);
 }
-
-        
-
-  
