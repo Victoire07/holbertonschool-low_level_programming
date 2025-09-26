@@ -644,3 +644,106 @@ int main(void)
     compter_majuscules_minuscules();
     return (0);
 }
+
+#include <stdio.h>
+
+void compte_rebours(int n)
+{
+    if (n == 0)
+    {
+		printf("BOUM !\n");
+		return;
+    }
+
+	printf("%d\n", n);
+
+
+    compte_rebours (n - 1);
+}
+
+int main(void)
+{
+    compte_rebours(5);
+    return 0;
+}
+
+#include <stdio.h>
+
+int somme(int n)
+{
+    if (n == 1)
+	 return 1;
+		
+	return n + somme(n - 1);
+}
+
+int main(void)
+{
+    int resultat = somme(5);
+    printf("La somme est : %d\n", resultat);
+    return 0;
+}
+
+#include <stdio.h>
+
+int factoriel(int n)
+{
+    if (n == 0)
+        return (1);
+
+    return n * factoriel(n - 1);
+}
+
+int main(void)
+{
+    int resultat = factoriel(5);
+    printf("Le factoriel est : %d\n", resultat);
+    return 0;
+}
+
+#include <stdio.h>
+/**
+ * print_from_1_to_n - Affiche de 1 à n (inclus) en récursif
+ * @n: Le nombre final
+ */
+
+void print_from_1_to_n(int n)
+{
+	if (n == 1)
+	{
+		printf("1\n");
+		return;
+	}
+
+	print_from_1_to_n(n - 1);
+	printf("%d\n", n);
+}
+
+/**
+ * main - Point d'entrée
+ * Return: Always 0
+ */
+int main(void)
+{
+	print_from_1_to_n(5);
+	return (0);
+}
+
+#include <stdio.h>
+int somme(int n)
+{
+	if (n == 1)
+	{
+		return (1);
+	}
+
+	return (n + somme(n - 1));
+}
+
+int main(void)
+{
+	int resultat = somme(4);
+
+	printf("La somme est : %d\n", resultat);
+	return (0);
+}
